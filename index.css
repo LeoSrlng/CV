@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./Montserrat-Regular.ttf");
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Verdana, Geneva, Tahoma;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.titre-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.titres {
+    font-size: 18px;
+    border: 2px solid var(--third-color);
+    border-radius: 10px;
+    color: var(--third-color);
+    min-width: fit-content;
+    padding: 0.25em 2em 0.25em 0.25em;
+    background-color: var(--fourth-color);
+}
+
+h3 {
+    font-size: 20px;
+}
+
+:root {
+    --main-color: #F4F4EE;
+    --second-color: #7B7B7B;
+    --third-color: #374978;
+    --fourth-color: #b4b4b4;
+}
+
+/************************** Profil **************************/
+
+.profil {
+    width: 25%;
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profil>div+div {
+    padding: 0 1em;
+}
+
+.photo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-profil {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 40%;
+    z-index: 1;
+}
+
+.liseret-profil {
+    position: absolute;
+    top: calc(50% - 13%);
+    height: 26%;
+    width: 100%;
+    background-color: var(--third-color);
+}
+
+.titre-profil {
+    padding: 0.25em 1em 0.25em 0.25em;
+    background-color: var(--main-color);
+}
+
+.barre-titre-profil {
+    background-color: var(--third-color);
+    width: 100%;
+    height: 2px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.li-contact {
+    display: flex;
+    align-items: center;
+}
+
+.icone-contact {
+    width: 5%;
+    fill: var(--third-color);
+    margin-right: 5px;
+}
+
+.profil>div>ul>li+li {
+    margin-top: 1em;
+}
+
+.petit {
+    height: calc((84% / 5) / 2)!important;
+}
+
+.cont-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-skillBarre {
+    width: 50%;
+    height: 8px;
+    background-color: var(--main-color);
+}
+
+.skill-HTML {
+    width: 90%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.skill-CSS {
+    width: 85%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.skill-REACT {
+    width: 70%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.skill-NODE {
+    width: 70%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.skill-SQL {
+    width: 60%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.skill-anglais {
+    width: 60%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.skill-espagnol {
+    width: 30%;
+    height: 100%;
+    background-color: var(--third-color);
+}
+
+.liste>li {
+    margin-top: 0.5em !important;
+}
+
+/*********************** Historique ************************/
+
+.historique {
+    position: relative;
+    padding: 2em 0.75em 1em;
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 75%;
+    color: var(--second-color);
+}
+
+.liseret-historique {
+    position: absolute;
+    top: calc(0px - 50px);
+    right: calc(0px - 50px);
+    width: 100px;
+    height: 100px;
+    background-color: var(--third-color);
+    transform: rotate(45deg);
+}
+
+.prenom {
+    color: var(--third-color);
+    letter-spacing: 2px;
+    font-size: 34px;
+}
+
+.nom {
+    color: var(--fourth-color);
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+.metier {
+    font-size: 30px;
+}
+
+.historique>article {
+    margin-top: 1em;
+}
+
+.barre-titre-historique {
+    background-color: var(--third-color);
+    width: 100%;
+    height: 2px;
+}
+
+.txt-aPropos {
+    line-height: 1.5em;
+}
+
+.historique-wrapper {
+    margin-left: 7em;
+    padding-left: 1em;
+    border-left: 2px solid var(--third-color);
+}
+
+.details {
+    margin: 2em 0;
+    position: relative;
+}
+
+.head-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titre-formation {
+    max-width: 60%;
+}
+
+.experience {
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+    padding: 0.25em 0.5em;
+    text-align: center;
+}
+
+.duree-wrapper {
+    position: absolute;
+    top: 1em;
+    right: calc(100% + 2em);
+    background-color: var(--second-color);
+    border-radius: 5px 0px 5px 5px;
+    transform: skew(-25deg, 0deg);
+}
+
+.duree-content {
+    transform: translate(-0.5em, 0.35em) skew(25deg, 0deg);
+    min-width: max-content;
+    font-size: 12px;
+    background-color: var(--third-color);
+    color: var(--main-color);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.liste-experience>li::before {
+    content: "✸ ";
+    color: var(--third-color);
+    padding-left: 1em;
+}
