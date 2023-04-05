@@ -102,6 +102,7 @@ h3 {
 .li-contact {
     display: flex;
     align-items: center;
+    font-size: 12px;
 }
 
 .icone-contact {
@@ -245,7 +246,7 @@ h3 {
 }
 
 .titre-formation {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .experience {
