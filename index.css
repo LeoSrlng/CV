@@ -132,25 +132,19 @@ h3 {
 }
 
 .skill-HTML {
-    width: 90%;
+    width: 98%;
     height: 100%;
     background-color: var(--third-color);
 }
 
 .skill-CSS {
-    width: 85%;
+    width: 93%;
     height: 100%;
     background-color: var(--third-color);
 }
 
 .skill-REACT {
-    width: 70%;
-    height: 100%;
-    background-color: var(--third-color);
-}
-
-.skill-NODE {
-    width: 70%;
+    width: 75%;
     height: 100%;
     background-color: var(--third-color);
 }
@@ -181,7 +175,7 @@ h3 {
 
 .historique {
     position: relative;
-    padding: 2em 0.75em 1em;
+    padding: 1.75em 0.75em 1em;
     background-color: var(--main-color);
     overflow: hidden;
     width: 75%;
